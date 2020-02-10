@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
+    />
+    <meta name="referrer" content="never" />
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://g.alicdn.com/de/prismplayer/2.8.7/skins/default/aliplayer-min.css"
+    />
+    <script
+      type="text/javascript"
+      charset="utf-8"
+      src="https://g.alicdn.com/de/prismplayer/2.8.7/aliplayer-min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="prism-player" id="player-con"></div>
+    <script>
+      var player = new Aliplayer(
+        {
+          id: 'player-con',
+          source:
+            'https://aweme.snssdk.com/aweme/v1/playwm/?s_vid=93f1b41336a8b7a442dbf1c29c6bbc566a4883a8737218900b951ba94ce7b43aed5835f4f511506f835976579d457396d1b3fa788179a456d136939c1729390c&line=0',
+          width: '100%',
+          height: '500px',
+          autoplay: true,
+          isLive: false,
+          rePlay: true,
+          playsinline: true,
+          preload: true,
+          controlBarVisibility: 'hover',
+          useH5Prism: true
+        },
+        function(player) {
+          console.log('The player is created');
+        }
+      );
+    </script>
+  </body>
+</html>
